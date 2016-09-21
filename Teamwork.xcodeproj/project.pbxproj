@@ -1,0 +1,715 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		696B70041D8BAD45006D84AF /* TWObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 696B70011D8BAD45006D84AF /* TWObject.m */; };
+		696B70051D8BAD45006D84AF /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 696B70031D8BAD45006D84AF /* User.m */; };
+		696B72AA1D8BB681006D84AF /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 696B72A91D8BB681006D84AF /* AdSupport.framework */; };
+		696B72AC1D8BB68B006D84AF /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 696B72AB1D8BB68B006D84AF /* CoreMotion.framework */; };
+		696B72AE1D8BB692006D84AF /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 696B72AD1D8BB692006D84AF /* StoreKit.framework */; };
+		696B72B31D8BC754006D84AF /* NSArray+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 696B72B21D8BC754006D84AF /* NSArray+JSON.m */; };
+		696B72B61D8BC7AA006D84AF /* NSDictionary+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 696B72B51D8BC7AA006D84AF /* NSDictionary+JSON.m */; };
+		696B72B91D8BC818006D84AF /* NSString+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 696B72B81D8BC818006D84AF /* NSString+JSON.m */; };
+		696B75911D8C371F006D84AF /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 696B75901D8C371F006D84AF /* LoginController.m */; };
+		696B75941D8C42C2006D84AF /* ButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 696B75931D8C42C2006D84AF /* ButtonCell.m */; };
+		69A0C5E61D86708C0005C074 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A0C5E51D86708C0005C074 /* main.m */; };
+		69A0C5E91D86708C0005C074 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A0C5E81D86708C0005C074 /* AppDelegate.m */; };
+		69A0C5EF1D86708C0005C074 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69A0C5ED1D86708C0005C074 /* Main.storyboard */; };
+		69A0C5F11D86708C0005C074 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69A0C5F01D86708C0005C074 /* Assets.xcassets */; };
+		69A0C5F41D86708C0005C074 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69A0C5F21D86708C0005C074 /* LaunchScreen.storyboard */; };
+		69A0C5FF1D86708C0005C074 /* proUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A0C5FE1D86708C0005C074 /* proUITests.m */; };
+		69A0C6101D86713B0005C074 /* TWController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A0C60F1D86713B0005C074 /* TWController.m */; };
+		69A0C6131D86715C0005C074 /* BackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A0C6121D86715C0005C074 /* BackgroundView.m */; };
+		69BB41BE1D924BF800FAEB7A /* Activity.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BB41BD1D924BF800FAEB7A /* Activity.m */; };
+		69BC62051D8A576800B67307 /* ProfileHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BC62041D8A576800B67307 /* ProfileHeaderView.m */; };
+		69BC62081D8A66BE00B67307 /* ActivityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BC62071D8A66BE00B67307 /* ActivityCell.m */; };
+		69BC620C1D8A697100B67307 /* UIColor+Teamwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BC620B1D8A697100B67307 /* UIColor+Teamwork.m */; };
+		69C156071D86808D005B496C /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C156061D86808D005B496C /* HomeViewController.m */; };
+		69C156141D868532005B496C /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69C1560A1D868532005B496C /* OpenSans-Bold.ttf */; };
+		69C156151D868532005B496C /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69C1560B1D868532005B496C /* OpenSans-BoldItalic.ttf */; };
+		69C156161D868532005B496C /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69C1560C1D868532005B496C /* OpenSans-ExtraBold.ttf */; };
+		69C156171D868532005B496C /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69C1560D1D868532005B496C /* OpenSans-ExtraBoldItalic.ttf */; };
+		69C156181D868532005B496C /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69C1560E1D868532005B496C /* OpenSans-Italic.ttf */; };
+		69C156191D868532005B496C /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69C1560F1D868532005B496C /* OpenSans-Light.ttf */; };
+		69C1561A1D868532005B496C /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69C156101D868532005B496C /* OpenSans-LightItalic.ttf */; };
+		69C1561B1D868532005B496C /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69C156111D868532005B496C /* OpenSans-Regular.ttf */; };
+		69C1561C1D868532005B496C /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69C156121D868532005B496C /* OpenSans-Semibold.ttf */; };
+		69C1561D1D868532005B496C /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69C156131D868532005B496C /* OpenSans-SemiboldItalic.ttf */; };
+		76D0E67674074792F32BBFF7 /* libPods-Teamwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D3674BFDB83706609E16C52 /* libPods-Teamwork.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		69A0C5FB1D86708C0005C074 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69A0C5D91D86708C0005C074 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69A0C5E01D86708C0005C074;
+			remoteInfo = pro;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		145BDDBE063B88D5B95CF6B7 /* libPods-pro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-pro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D3674BFDB83706609E16C52 /* libPods-Teamwork.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Teamwork.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		696B6FFD1D8BAA5A006D84AF /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		696B70001D8BAD45006D84AF /* TWObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWObject.h; sourceTree = "<group>"; };
+		696B70011D8BAD45006D84AF /* TWObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWObject.m; sourceTree = "<group>"; };
+		696B70021D8BAD45006D84AF /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		696B70031D8BAD45006D84AF /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		696B70061D8BB061006D84AF /* API_Defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = API_Defines.h; sourceTree = "<group>"; };
+		696B70071D8BB0DE006D84AF /* DeviceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceInfo.h; sourceTree = "<group>"; };
+		696B72A71D8BB2E6006D84AF /* NSUserDefaults-macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults-macros.h"; sourceTree = "<group>"; };
+		696B72A91D8BB681006D84AF /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		696B72AB1D8BB68B006D84AF /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		696B72AD1D8BB692006D84AF /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		696B72B11D8BC754006D84AF /* NSArray+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+JSON.h"; sourceTree = "<group>"; };
+		696B72B21D8BC754006D84AF /* NSArray+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+JSON.m"; sourceTree = "<group>"; };
+		696B72B41D8BC7AA006D84AF /* NSDictionary+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JSON.h"; sourceTree = "<group>"; };
+		696B72B51D8BC7AA006D84AF /* NSDictionary+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JSON.m"; sourceTree = "<group>"; };
+		696B72B71D8BC818006D84AF /* NSString+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JSON.h"; sourceTree = "<group>"; };
+		696B72B81D8BC818006D84AF /* NSString+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JSON.m"; sourceTree = "<group>"; };
+		696B75351D8C2E3C006D84AF /* Teamwork-prefix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Teamwork-prefix.h"; sourceTree = "<group>"; };
+		696B758F1D8C371F006D84AF /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
+		696B75901D8C371F006D84AF /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
+		696B75921D8C42C2006D84AF /* ButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonCell.h; sourceTree = "<group>"; };
+		696B75931D8C42C2006D84AF /* ButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonCell.m; sourceTree = "<group>"; };
+		69A0C5E11D86708C0005C074 /* Teamwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teamwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		69A0C5E51D86708C0005C074 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		69A0C5E71D86708C0005C074 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		69A0C5E81D86708C0005C074 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		69A0C5EE1D86708C0005C074 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		69A0C5F01D86708C0005C074 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		69A0C5F31D86708C0005C074 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		69A0C5F51D86708C0005C074 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69A0C5FA1D86708C0005C074 /* TeamworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeamworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		69A0C5FE1D86708C0005C074 /* proUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = proUITests.m; sourceTree = "<group>"; };
+		69A0C6001D86708C0005C074 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69A0C60E1D86713B0005C074 /* TWController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWController.h; sourceTree = "<group>"; };
+		69A0C60F1D86713B0005C074 /* TWController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWController.m; sourceTree = "<group>"; };
+		69A0C6111D86715C0005C074 /* BackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundView.h; sourceTree = "<group>"; };
+		69A0C6121D86715C0005C074 /* BackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundView.m; sourceTree = "<group>"; };
+		69BB41BC1D924BF800FAEB7A /* Activity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Activity.h; sourceTree = "<group>"; };
+		69BB41BD1D924BF800FAEB7A /* Activity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Activity.m; sourceTree = "<group>"; };
+		69BC62031D8A576800B67307 /* ProfileHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileHeaderView.h; sourceTree = "<group>"; };
+		69BC62041D8A576800B67307 /* ProfileHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileHeaderView.m; sourceTree = "<group>"; };
+		69BC62061D8A66BE00B67307 /* ActivityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityCell.h; sourceTree = "<group>"; };
+		69BC62071D8A66BE00B67307 /* ActivityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityCell.m; sourceTree = "<group>"; };
+		69BC620A1D8A697100B67307 /* UIColor+Teamwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Teamwork.h"; path = "Utilities/UIColor+Teamwork.h"; sourceTree = "<group>"; };
+		69BC620B1D8A697100B67307 /* UIColor+Teamwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Teamwork.m"; path = "Utilities/UIColor+Teamwork.m"; sourceTree = "<group>"; };
+		69C156051D86808D005B496C /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		69C156061D86808D005B496C /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		69C1560A1D868532005B496C /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		69C1560B1D868532005B496C /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		69C1560C1D868532005B496C /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		69C1560D1D868532005B496C /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		69C1560E1D868532005B496C /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		69C1560F1D868532005B496C /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		69C156101D868532005B496C /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		69C156111D868532005B496C /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		69C156121D868532005B496C /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		69C156131D868532005B496C /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		9D443DF9172FED5FF192636A /* Pods-pro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pro/Pods-pro.debug.xcconfig"; sourceTree = "<group>"; };
+		EE35395C60F4E301CA23F163 /* Pods-pro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pro.release.xcconfig"; path = "Pods/Target Support Files/Pods-pro/Pods-pro.release.xcconfig"; sourceTree = "<group>"; };
+		EFC090B722C07C991094C77A /* Pods-Teamwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teamwork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Teamwork/Pods-Teamwork.debug.xcconfig"; sourceTree = "<group>"; };
+		F14F8B8431E71F15FBE83273 /* Pods-Teamwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teamwork.release.xcconfig"; path = "Pods/Target Support Files/Pods-Teamwork/Pods-Teamwork.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69A0C5DE1D86708C0005C074 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				696B72AE1D8BB692006D84AF /* StoreKit.framework in Frameworks */,
+				696B72AC1D8BB68B006D84AF /* CoreMotion.framework in Frameworks */,
+				696B72AA1D8BB681006D84AF /* AdSupport.framework in Frameworks */,
+				76D0E67674074792F32BBFF7 /* libPods-Teamwork.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69A0C5F71D86708C0005C074 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		696B6FFF1D8BAD45006D84AF /* API */ = {
+			isa = PBXGroup;
+			children = (
+				696B72A71D8BB2E6006D84AF /* NSUserDefaults-macros.h */,
+				696B70001D8BAD45006D84AF /* TWObject.h */,
+				696B70011D8BAD45006D84AF /* TWObject.m */,
+				696B70061D8BB061006D84AF /* API_Defines.h */,
+				696B70021D8BAD45006D84AF /* User.h */,
+				696B70031D8BAD45006D84AF /* User.m */,
+				69BB41BC1D924BF800FAEB7A /* Activity.h */,
+				69BB41BD1D924BF800FAEB7A /* Activity.m */,
+				696B70071D8BB0DE006D84AF /* DeviceInfo.h */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		696B72BA1D8C2A90006D84AF /* Third Party */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Third Party";
+			sourceTree = "<group>";
+		};
+		69A0C5D81D86708C0005C074 = {
+			isa = PBXGroup;
+			children = (
+				69A0C5E31D86708C0005C074 /* Teamwork */,
+				69A0C5FD1D86708C0005C074 /* proUITests */,
+				69A0C5E21D86708C0005C074 /* Products */,
+				AA14C43840C1864CD679EFDD /* Pods */,
+				7901D8D1D7506DC5221F2178 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		69A0C5E21D86708C0005C074 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69A0C5E11D86708C0005C074 /* Teamwork.app */,
+				69A0C5FA1D86708C0005C074 /* TeamworkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69A0C5E31D86708C0005C074 /* Teamwork */ = {
+			isa = PBXGroup;
+			children = (
+				696B72BA1D8C2A90006D84AF /* Third Party */,
+				696B6FFF1D8BAD45006D84AF /* API */,
+				69C156081D86851B005B496C /* Resources */,
+				69A0C60D1D86713B0005C074 /* Base Controllers */,
+				69A0C5E71D86708C0005C074 /* AppDelegate.h */,
+				69A0C5E81D86708C0005C074 /* AppDelegate.m */,
+				696B6FFD1D8BAA5A006D84AF /* Macros.h */,
+				69A0C5ED1D86708C0005C074 /* Main.storyboard */,
+				69A0C5F01D86708C0005C074 /* Assets.xcassets */,
+				69A0C5F21D86708C0005C074 /* LaunchScreen.storyboard */,
+				69A0C5F51D86708C0005C074 /* Info.plist */,
+				69A0C5E41D86708C0005C074 /* Supporting Files */,
+				69C156051D86808D005B496C /* HomeViewController.h */,
+				69C156061D86808D005B496C /* HomeViewController.m */,
+				696B758F1D8C371F006D84AF /* LoginController.h */,
+				696B75901D8C371F006D84AF /* LoginController.m */,
+				69BC620D1D8A697600B67307 /* Utilities */,
+			);
+			path = Teamwork;
+			sourceTree = "<group>";
+		};
+		69A0C5E41D86708C0005C074 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				69A0C5E51D86708C0005C074 /* main.m */,
+				696B75351D8C2E3C006D84AF /* Teamwork-prefix.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		69A0C5FD1D86708C0005C074 /* proUITests */ = {
+			isa = PBXGroup;
+			children = (
+				69A0C5FE1D86708C0005C074 /* proUITests.m */,
+				69A0C6001D86708C0005C074 /* Info.plist */,
+			);
+			path = proUITests;
+			sourceTree = "<group>";
+		};
+		69A0C60D1D86713B0005C074 /* Base Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				69A0C60E1D86713B0005C074 /* TWController.h */,
+				69A0C60F1D86713B0005C074 /* TWController.m */,
+				69A0C6111D86715C0005C074 /* BackgroundView.h */,
+				69A0C6121D86715C0005C074 /* BackgroundView.m */,
+				69BC62031D8A576800B67307 /* ProfileHeaderView.h */,
+				69BC62041D8A576800B67307 /* ProfileHeaderView.m */,
+				69BC62061D8A66BE00B67307 /* ActivityCell.h */,
+				69BC62071D8A66BE00B67307 /* ActivityCell.m */,
+				696B75921D8C42C2006D84AF /* ButtonCell.h */,
+				696B75931D8C42C2006D84AF /* ButtonCell.m */,
+			);
+			path = "Base Controllers";
+			sourceTree = "<group>";
+		};
+		69BC620D1D8A697600B67307 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				69BC620A1D8A697100B67307 /* UIColor+Teamwork.h */,
+				69BC620B1D8A697100B67307 /* UIColor+Teamwork.m */,
+				696B72B11D8BC754006D84AF /* NSArray+JSON.h */,
+				696B72B21D8BC754006D84AF /* NSArray+JSON.m */,
+				696B72B41D8BC7AA006D84AF /* NSDictionary+JSON.h */,
+				696B72B51D8BC7AA006D84AF /* NSDictionary+JSON.m */,
+				696B72B71D8BC818006D84AF /* NSString+JSON.h */,
+				696B72B81D8BC818006D84AF /* NSString+JSON.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		69C156081D86851B005B496C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				69C156091D868532005B496C /* Fonts */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		69C156091D868532005B496C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				69C1560A1D868532005B496C /* OpenSans-Bold.ttf */,
+				69C1560B1D868532005B496C /* OpenSans-BoldItalic.ttf */,
+				69C1560C1D868532005B496C /* OpenSans-ExtraBold.ttf */,
+				69C1560D1D868532005B496C /* OpenSans-ExtraBoldItalic.ttf */,
+				69C1560E1D868532005B496C /* OpenSans-Italic.ttf */,
+				69C1560F1D868532005B496C /* OpenSans-Light.ttf */,
+				69C156101D868532005B496C /* OpenSans-LightItalic.ttf */,
+				69C156111D868532005B496C /* OpenSans-Regular.ttf */,
+				69C156121D868532005B496C /* OpenSans-Semibold.ttf */,
+				69C156131D868532005B496C /* OpenSans-SemiboldItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		7901D8D1D7506DC5221F2178 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				696B72AD1D8BB692006D84AF /* StoreKit.framework */,
+				696B72AB1D8BB68B006D84AF /* CoreMotion.framework */,
+				696B72A91D8BB681006D84AF /* AdSupport.framework */,
+				145BDDBE063B88D5B95CF6B7 /* libPods-pro.a */,
+				2D3674BFDB83706609E16C52 /* libPods-Teamwork.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA14C43840C1864CD679EFDD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D443DF9172FED5FF192636A /* Pods-pro.debug.xcconfig */,
+				EE35395C60F4E301CA23F163 /* Pods-pro.release.xcconfig */,
+				EFC090B722C07C991094C77A /* Pods-Teamwork.debug.xcconfig */,
+				F14F8B8431E71F15FBE83273 /* Pods-Teamwork.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69A0C5E01D86708C0005C074 /* Teamwork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69A0C6031D86708C0005C074 /* Build configuration list for PBXNativeTarget "Teamwork" */;
+			buildPhases = (
+				925F9359CE08A10B0CFF976E /* 📦 Check Pods Manifest.lock */,
+				69A0C5DD1D86708C0005C074 /* Sources */,
+				69A0C5DE1D86708C0005C074 /* Frameworks */,
+				69A0C5DF1D86708C0005C074 /* Resources */,
+				15A4BA6D43E1E8EFF4465FA8 /* 📦 Embed Pods Frameworks */,
+				67EF96C807D16BB77A9E8784 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Teamwork;
+			productName = pro;
+			productReference = 69A0C5E11D86708C0005C074 /* Teamwork.app */;
+			productType = "com.apple.product-type.application";
+		};
+		69A0C5F91D86708C0005C074 /* TeamworkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69A0C6061D86708C0005C074 /* Build configuration list for PBXNativeTarget "TeamworkUITests" */;
+			buildPhases = (
+				69A0C5F61D86708C0005C074 /* Sources */,
+				69A0C5F71D86708C0005C074 /* Frameworks */,
+				69A0C5F81D86708C0005C074 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69A0C5FC1D86708C0005C074 /* PBXTargetDependency */,
+			);
+			name = TeamworkUITests;
+			productName = proUITests;
+			productReference = 69A0C5FA1D86708C0005C074 /* TeamworkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		69A0C5D91D86708C0005C074 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = iOS;
+				TargetAttributes = {
+					69A0C5E01D86708C0005C074 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 4U5KNE4PJF;
+						ProvisioningStyle = Automatic;
+					};
+					69A0C5F91D86708C0005C074 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 4U5KNE4PJF;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 69A0C5E01D86708C0005C074;
+					};
+				};
+			};
+			buildConfigurationList = 69A0C5DC1D86708C0005C074 /* Build configuration list for PBXProject "Teamwork" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				he,
+			);
+			mainGroup = 69A0C5D81D86708C0005C074;
+			productRefGroup = 69A0C5E21D86708C0005C074 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69A0C5E01D86708C0005C074 /* Teamwork */,
+				69A0C5F91D86708C0005C074 /* TeamworkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69A0C5DF1D86708C0005C074 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69C1561C1D868532005B496C /* OpenSans-Semibold.ttf in Resources */,
+				69C1561D1D868532005B496C /* OpenSans-SemiboldItalic.ttf in Resources */,
+				69A0C5F41D86708C0005C074 /* LaunchScreen.storyboard in Resources */,
+				69C1561B1D868532005B496C /* OpenSans-Regular.ttf in Resources */,
+				69C156181D868532005B496C /* OpenSans-Italic.ttf in Resources */,
+				69C156171D868532005B496C /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				69A0C5F11D86708C0005C074 /* Assets.xcassets in Resources */,
+				69C1561A1D868532005B496C /* OpenSans-LightItalic.ttf in Resources */,
+				69C156141D868532005B496C /* OpenSans-Bold.ttf in Resources */,
+				69A0C5EF1D86708C0005C074 /* Main.storyboard in Resources */,
+				69C156191D868532005B496C /* OpenSans-Light.ttf in Resources */,
+				69C156151D868532005B496C /* OpenSans-BoldItalic.ttf in Resources */,
+				69C156161D868532005B496C /* OpenSans-ExtraBold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69A0C5F81D86708C0005C074 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15A4BA6D43E1E8EFF4465FA8 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Teamwork/Pods-Teamwork-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67EF96C807D16BB77A9E8784 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Teamwork/Pods-Teamwork-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		925F9359CE08A10B0CFF976E /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69A0C5DD1D86708C0005C074 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				696B70041D8BAD45006D84AF /* TWObject.m in Sources */,
+				69A0C6131D86715C0005C074 /* BackgroundView.m in Sources */,
+				69BB41BE1D924BF800FAEB7A /* Activity.m in Sources */,
+				696B72B61D8BC7AA006D84AF /* NSDictionary+JSON.m in Sources */,
+				696B72B31D8BC754006D84AF /* NSArray+JSON.m in Sources */,
+				69BC62081D8A66BE00B67307 /* ActivityCell.m in Sources */,
+				69BC620C1D8A697100B67307 /* UIColor+Teamwork.m in Sources */,
+				696B70051D8BAD45006D84AF /* User.m in Sources */,
+				69A0C6101D86713B0005C074 /* TWController.m in Sources */,
+				69BC62051D8A576800B67307 /* ProfileHeaderView.m in Sources */,
+				69A0C5E91D86708C0005C074 /* AppDelegate.m in Sources */,
+				696B75941D8C42C2006D84AF /* ButtonCell.m in Sources */,
+				69C156071D86808D005B496C /* HomeViewController.m in Sources */,
+				69A0C5E61D86708C0005C074 /* main.m in Sources */,
+				696B75911D8C371F006D84AF /* LoginController.m in Sources */,
+				696B72B91D8BC818006D84AF /* NSString+JSON.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69A0C5F61D86708C0005C074 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69A0C5FF1D86708C0005C074 /* proUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		69A0C5FC1D86708C0005C074 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69A0C5E01D86708C0005C074 /* Teamwork */;
+			targetProxy = 69A0C5FB1D86708C0005C074 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		69A0C5ED1D86708C0005C074 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69A0C5EE1D86708C0005C074 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		69A0C5F21D86708C0005C074 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69A0C5F31D86708C0005C074 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		69A0C6011D86708C0005C074 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		69A0C6021D86708C0005C074 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		69A0C6041D86708C0005C074 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFC090B722C07C991094C77A /* Pods-Teamwork.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4U5KNE4PJF;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PREFIX_HEADER = "./Teamwork/Teamwork-prefix.h";
+				INFOPLIST_FILE = Teamwork/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shashankpatel.teamwork;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		69A0C6051D86708C0005C074 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F14F8B8431E71F15FBE83273 /* Pods-Teamwork.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4U5KNE4PJF;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PREFIX_HEADER = "./Teamwork/Teamwork-prefix.h";
+				INFOPLIST_FILE = Teamwork/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shashankpatel.teamwork;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		69A0C6071D86708C0005C074 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 4U5KNE4PJF;
+				INFOPLIST_FILE = proUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.konecthealth.proUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = pro;
+			};
+			name = Debug;
+		};
+		69A0C6081D86708C0005C074 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 4U5KNE4PJF;
+				INFOPLIST_FILE = proUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.konecthealth.proUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = pro;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69A0C5DC1D86708C0005C074 /* Build configuration list for PBXProject "Teamwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69A0C6011D86708C0005C074 /* Debug */,
+				69A0C6021D86708C0005C074 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69A0C6031D86708C0005C074 /* Build configuration list for PBXNativeTarget "Teamwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69A0C6041D86708C0005C074 /* Debug */,
+				69A0C6051D86708C0005C074 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69A0C6061D86708C0005C074 /* Build configuration list for PBXNativeTarget "TeamworkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69A0C6071D86708C0005C074 /* Debug */,
+				69A0C6081D86708C0005C074 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 69A0C5D91D86708C0005C074 /* Project object */;
+}
