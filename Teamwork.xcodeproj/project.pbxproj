@@ -190,7 +190,7 @@
 				696B72BA1D8C2A90006D84AF /* Third Party */,
 				696B6FFF1D8BAD45006D84AF /* API */,
 				69C156081D86851B005B496C /* Resources */,
-				69A0C60D1D86713B0005C074 /* Base Controllers */,
+				69A0C60D1D86713B0005C074 /* Base */,
 				69A0C5E71D86708C0005C074 /* AppDelegate.h */,
 				69A0C5E81D86708C0005C074 /* AppDelegate.m */,
 				696B6FFD1D8BAA5A006D84AF /* Macros.h */,
@@ -226,7 +226,7 @@
 			path = proUITests;
 			sourceTree = "<group>";
 		};
-		69A0C60D1D86713B0005C074 /* Base Controllers */ = {
+		69A0C60D1D86713B0005C074 /* Base */ = {
 			isa = PBXGroup;
 			children = (
 				69A0C60E1D86713B0005C074 /* TWController.h */,
@@ -240,6 +240,7 @@
 				696B75921D8C42C2006D84AF /* ButtonCell.h */,
 				696B75931D8C42C2006D84AF /* ButtonCell.m */,
 			);
+			name = Base;
 			path = "Base Controllers";
 			sourceTree = "<group>";
 		};

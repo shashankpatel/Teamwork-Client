@@ -60,15 +60,6 @@
 }
 
 - (void)setController{
-//    [User logInWithEmailInBackground:@"drjinesh123@gmail.com" password:@"jinesh.kh" block:^(User * _Nullable user, NSError * _Nullable error) {
-//        if (user) {
-//            self.homeVC = ControllerFromMainStoryBoard(@"HomeViewController");
-//            self.homeVC.user = user;
-//            self.window.rootViewController = self.homeVC;
-//        }
-//        
-//    }];
-////    return;
     if ([User currentUser]) {
         self.homeVC = ControllerFromMainStoryBoard(@"HomeViewController");
         self.homeVC.user = [User currentUser];

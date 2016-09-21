@@ -3,7 +3,7 @@
 //  Chroma
 //
 //  Created by Shashank Patel on 14/04/16.
-//  Copyright © 2016 Themeefy. All rights reserved.
+//  Copyright © 2016. All rights reserved.
 //
 
 #import "User.h"
@@ -13,14 +13,6 @@
 
 - (NSString*)objectId{
     return internalObject[@"_id"];
-}
-
-- (void)setEmail:(NSString *)email{
-    internalObject[@"kh-auth-user"] = email;
-}
-
-- (NSString*)email{
-    return internalObject[@"kh-auth-user"];
 }
 
 - (void)setFullName:(NSString *)fullName{
@@ -115,41 +107,7 @@ static User *currentUser;
 }
 
 - (void)fetchProfileInBackgroundWithBlock:(nullable UserResultBlock)block{
-    NSDictionary *loginHeaders = @{@"kh-auth-user" : self.email};
-    NSDictionary *parameters = @{@"api_token" : self.token};
-    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
-    AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
     
-    
-    NSString *URLString = [API_BASE_URL stringByAppendingPathComponent:USER_PROFILE_END_POINT];
-    NSMutableURLRequest *request = [[AFJSONRequestSerializer serializer] requestWithMethod:@"POST"
-                                                                                 URLString:URLString
-                                                                                parameters:parameters
-                                                                                     error:nil];
-    for (NSString *headerKey in loginHeaders.allKeys) {
-        [request setValue:loginHeaders[headerKey] forHTTPHeaderField:headerKey];
-    }
-    
-    NSURLSessionDataTask *dataTask = [manager dataTaskWithRequest:request completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
-        if (error) {
-            NSLog(@"Error: %@", error);
-            if(block)block(nil, error);
-        } else {
-            if ([responseObject[@"status"] isEqualToString:@"success"]) {
-                NSMutableDictionary *userDict = [responseObject[@"data"] mutableCopy];
-                for (id<NSCopying> key in userDict.allKeys) {
-                    if([userDict[key] isKindOfClass:[NSNull class]]){
-                        userDict[key] = @"";
-                    }
-                }
-//                [[NSNotificationCenter defaultCenter] postNotificationName:USER_RELOADED_NOTIFICATION object:nil];
-                self[@"profile"] = userDict;
-                [self setCurrent];
-                if(block)block(self, nil);
-            }
-        }
-    }];
-    [dataTask resume];
 }
 
 - (void)fetchInBackground{
@@ -164,49 +122,11 @@ static User *currentUser;
 }
 
 - (void)signUpInBackgroundWithBlock:(nullable BooleanResultBlock)block{
-    NSDictionary *signUpDict = @{@"fullName" : self.fullName,
-                                 @"email" : self.email,
-                                 @"password" : self.password};
-    NSString *URLString = [API_BASE_URL stringByAppendingPathComponent:SIGNUP_END_POINT];
-    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
-    AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
-    NSMutableURLRequest *request = [[AFJSONRequestSerializer serializer] requestWithMethod:@"POST"
-                                                                                 URLString:URLString
-                                                                                parameters:signUpDict
-                                                                                     error:nil];
     
-    NSURLSessionDataTask *dataTask = [manager dataTaskWithRequest:request completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
-        if (error) {
-            NSLog(@"Error: %@", error);
-            block(NO, error);
-        } else {
-            NSLog(@"%@ %@", response, responseObject);
-            block(YES, nil);
-        }
-    }];
-    [dataTask resume];
 }
 
 - (void)saveInBackgroundWithBlock:(nullable BooleanResultBlock)block{
-    /*
-    NSString *urlEndPoint = USER_PROFILE_END_POINT;
-    AFHTTPRequestOperationManager *manager = [[AFHTTPRequestOperationManager alloc] initWithBaseURL:[NSURL URLWithString:API_BASE_URL]];
-    manager.requestSerializer = [AFJSONRequestSerializer new];
-    [manager.requestSerializer setValue:self.token forHTTPHeaderField:@"Authorization"];
-    [manager PATCH:urlEndPoint
-        parameters:updateObject
-           success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
-               NSLog(@"responseObject: %@", [responseObject description]);
-               [self resetDetails:responseObject[@"user"]];
-               [self setCurrent];
-               if(block)block(YES, nil);
-               [[NSNotificationCenter defaultCenter] postNotificationName:USER_RELOADED_NOTIFICATION object:nil];
-           }
-           failure:^(AFHTTPRequestOperation * _Nullable operation, NSError * _Nonnull error) {
-               if(block)block(NO, error);
-               NSLog(@"Error: %@", error.description);
-           }];
-     */
+    
 }
 
 - (void)saveInBackground{
@@ -214,25 +134,7 @@ static User *currentUser;
 }
 
 + (void)updatePasswordForEmail:(NSString*)email OTP:(NSString*)OTP password:(NSString*)newPassword block:(BooleanResultBlock)block{
-    /*
-    NSDictionary *parameters = @{@"email": email,
-                                 @"otp" : OTP,
-                                 @"newPassword" : newPassword};
-    NSString *urlEndPoint = UPDATE_PASSWORD_END_POINT;
-    AFHTTPRequestOperationManager *manager = [[AFHTTPRequestOperationManager alloc] initWithBaseURL:[NSURL URLWithString:API_BASE_URL]];
-    manager.requestSerializer = [AFJSONRequestSerializer new];
-    [manager.requestSerializer setValue:[User currentUser].token forHTTPHeaderField:@"Authorization"];
-    [manager PATCH:urlEndPoint
-        parameters:parameters
-           success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
-               NSLog(@"responseObject: %@", [responseObject description]);
-               if(block)block(YES, nil);
-           }
-           failure:^(AFHTTPRequestOperation * _Nullable operation, NSError * _Nonnull error) {
-               if(block)block(NO, error);
-               NSLog(@"Error: %@", error.description);
-           }];
-     */
+    
 }
 
 - (NSString*)description{

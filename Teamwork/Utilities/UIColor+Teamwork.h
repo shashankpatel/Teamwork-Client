@@ -1,5 +1,5 @@
 //
-//  UIColor+KH.h
+//  UIColor+Teamwork.h
 //  pro
 //
 //  Created by Shashank Patel on 15/09/16.

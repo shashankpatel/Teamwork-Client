@@ -16,10 +16,6 @@
 #import "NSString+JSON.h"
 
 #define CURRENT_USER_KEY        @"current_user"
-#define RESOURCES_BASE_URL      @"https://www.konecthealth.com"
-#define PROFILE_IMAGE_END_POINT @"assets/uploads/profile"
-#define USER_PROFILE_END_POINT  @"getprofile"
-#define API_BASE_URL            @"http://dev.konecthealth.com/api/v1"
 #define LOGIN_END_POINT         @"login"
 #define AUTHENTICATE_URL        @"http://authenticate.teamworkpm.net/authenticate.json"
 #define ACTIVITIES_URL          @"latestActivity.json?maxItems=25"

@@ -3,7 +3,7 @@
 //  Chroma
 //
 //  Created by Shashank Patel on 14/04/16.
-//  Copyright © 2016 Themeefy. All rights reserved.
+//  Copyright © 2016. All rights reserved.
 //
 
 #import "TWObject.h"
